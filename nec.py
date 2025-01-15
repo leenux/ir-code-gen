@@ -15,7 +15,6 @@ def getLevelsByCode(a):
     lvlString += getLevelsByByte(a)
     reverse = 255 - a
     lvlString += getLevelsByByte(reverse)
-    print(lvlString)
     return lvlString
 
 if __name__ == "__main__":

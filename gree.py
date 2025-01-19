@@ -3,9 +3,9 @@
 #对应的码库为格力9，inst值：100032
  
 startLevel = (9000,4500)    #起始码
-linkLevel = (550,20000)     #连接码
-lowLevel = (550,550)        #低电平
-highLevel = (550,1660)      #高电平
+linkLevel = (620,19980)     #连接码
+lowLevel = (620,540)        #低电平
+highLevel = (620,1660)      #高电平
  
 #模式标志
 modeFlag = 4
@@ -185,7 +185,7 @@ def getCheckoutCode():
     return code
  
 def getSecondCodeEnd():
-    secondCodeEnd = (550,40000)
+    secondCodeEnd = (620,19980)
     return secondCodeEnd
  
 if __name__ == "__main__":

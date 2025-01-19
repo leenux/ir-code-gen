@@ -20,7 +20,7 @@ def getLevelsByCode(a):
 if __name__ == "__main__":
     print("NEC编码生成")
     code = startLevel                   #引导码
-    code += getLevelsByCode(0x40)       #address
-    code += getLevelsByCode(0x12)       #command
+    code += getLevelsByCode(0x04)       #address
+    code += getLevelsByCode(0x08)       #command
     print("电平码：")
     print(code)

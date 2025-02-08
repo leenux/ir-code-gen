@@ -93,6 +93,7 @@ def r05d_encode(address, command1, command2):
 
     # 添加结束脉冲
     data_sequence.append((end_space))
+    data_sequence.append((end_space))
 
     return data_sequence
 

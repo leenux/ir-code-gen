@@ -4,7 +4,7 @@ endLevel = (560,200000)                #结束码
 
 def getLevelsByByte(b):
     lvls = ()
-    for i in range(8, -1, -1):
+    for i in range(7, -1, -1):
         lvls += level[((2 ** i) & b) >> i]
     return lvls
 

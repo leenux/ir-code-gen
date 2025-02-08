@@ -6,7 +6,7 @@ level = ((562,562), (562,1687))         #0,1对应的电平
 
 def getLevelsByByte(b):
     lvls = ()
-    for i in range(8, -1, -1):
+    for i in range(7, -1, -1):
         lvls += level[((2 ** i) & b) >> i]
     return lvls
 

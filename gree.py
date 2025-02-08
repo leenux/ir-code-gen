@@ -134,8 +134,8 @@ def getLinkCode():
  
  
 #上下扫风
-fanUpAndDownFlag = 1;
-fanLeftAndRightFlag = 1;
+fanUpAndDownFlag = 1
+fanLeftAndRightFlag = 1
 def fanUpAndDownCodeFunc(f):
     global fanUpAndDownFlag
     fanUpAndDownCode = (lowLevel+lowLevel+lowLevel+lowLevel,

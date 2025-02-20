@@ -32,7 +32,7 @@ if __name__ == "__main__":
     print("夏普电视编码生成")
     code = startLevel  # 引导码
     code += getLevelsByByte(0b0000, 4)  # address1
-    cmd = 0b10101000  # command
+    cmd = 0b01101000  # command
     code += getLevelsByByte(cmd, 8)
     code += getLevelsByByte(0b10, 2)  # fix code
     code += sepLevel

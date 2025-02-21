@@ -28,10 +28,16 @@ def vs1st(df1, df2):
     comp1 = (df_diff1 - df_diff2).abs() / df_diff1 > deviation
     comp2 = (df_diff1 - df_diff2).abs() / df_diff2 > deviation
     if comp1.sum() > 0:
-        print(f"电平宽度偏差超{deviation}的:", comp1)
+        print(
+            f"电平宽度偏差超{deviation}的:",
+            [i for i, value in enumerate(comp1.tolist()) if value],
+        )
         return False
     if comp2.sum() > 0:
-        print(f"电平宽度偏差超{deviation}的:", comp2)
+        print(
+            f"电平宽度偏差超{deviation}的:",
+            [i for i, value in enumerate(comp2.tolist()) if value],
+        )
         return False
     return True
 

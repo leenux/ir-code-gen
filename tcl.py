@@ -18,7 +18,7 @@ def getLevelsBy4bits(b):
 
 if __name__ == "__main__":
     print("TCL电视编码")
-    cmd = 0xF2
+    cmd = 0x2F
     code = startLevel                   #引导码
     code += getLevelsBy4bits(0xF)       #address
     code += getLevelsByByte(cmd)       #command

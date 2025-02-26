@@ -78,7 +78,7 @@ def oc():  # open-cool-26d
     return code
 
 
-def cc():  # open-cool-26d
+def cc():  # close-cool-26d
     code = start
     code += getLevelsByData(
         level1,
@@ -88,7 +88,7 @@ def cc():  # open-cool-26d
             0b01111011,
             0b10000100,
             0b11100000,
-            0b000111111,
+            0b00011111,
         ],
     )
     code += connect1
@@ -131,7 +131,7 @@ def cc():  # open-cool-26d
     return code
 
 
-def oh():  # open-cool-26d
+def oh():  # open-heat-26d
     code = start
     code += getLevelsByData(
         level1,
@@ -184,7 +184,7 @@ def oh():  # open-cool-26d
     return code
 
 
-def ch():  # open-cool-26d
+def ch():  # close-heat-26d
     code = start
     code += getLevelsByData(
         level1,
@@ -240,5 +240,5 @@ def ch():  # open-cool-26d
 if __name__ == "__main__":
     print("美的空调抓码生成")
     print("电平码：")
-    code = ch()
+    code = cc()
     print(code)
